@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Odufua You Deserve to Smile, Super Woman</title>
+    <title>For Odufua – You Deserve to Smile, Super Woman</title>
     <meta name="description" content="A joyful reminder for Odufua filled with warmth, encouragement, and happy memories.">
     
     <!-- Google Fonts -->
@@ -154,9 +154,15 @@
         
         video {
             width: 100%;
-            height: auto;
+            height: 200px; /* Fixed height for consistent layout */
             display: block;
             object-fit: cover;
+            background: linear-gradient(45deg, var(--pink), var(--purple)); /* Beautiful gradient while loading */
+        }
+        
+        video::cue {
+            background: var(--soft-white);
+            color: var(--text);
         }
         
         .video-caption {
@@ -235,6 +241,9 @@
             .videos {
                 grid-template-columns: repeat(2, 1fr);
             }
+            video {
+                height: 250px;
+            }
         }
         
         @media (min-width: 768px) {
@@ -244,6 +253,9 @@
             .videos {
                 grid-template-columns: repeat(3, 1fr);
             }
+            video {
+                height: 200px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -252,6 +264,9 @@
             }
             .section-content {
                 padding: 40px 20px;
+            }
+            video {
+                height: 180px;
             }
         }
     </style>
@@ -279,7 +294,7 @@
                 
                 <div class="videos">
                     <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/ffeef8/ff6b9d?text=Click+to+Play+%E2%9D%A4">
+                        <video preload="auto" autoplay muted loop playsinline>
                             <source src="video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -287,7 +302,7 @@
                     </div>
                     
                     <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/fdf4ff/c44cfd?text=Your+Warm+Smile+%F0%9F%98%8A">
+                        <video preload="auto" autoplay muted loop playsinline>
                             <source src="video2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -295,7 +310,7 @@
                     </div>
                     
                     <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/fff0f8/ff9ecb?text=Joyful+Moments+%E2%9C%A8">
+                        <video preload="auto" autoplay muted loop playsinline>
                             <source src="video3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -303,7 +318,7 @@
                     </div>
                     
                     <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/f8e8ff/ff6b9d?text=Shine+Bright+%F0%9F%8C%9F">
+                        <video preload="auto" autoplay muted loop playsinline>
                             <source src="video4.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -311,7 +326,7 @@
                     </div>
                     
                     <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/fff0f8/c44cfd?text=Happy+You+%F0%9F%92%95">
+                        <video preload="auto" autoplay muted loop playsinline>
                             <source src="video5.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -321,7 +336,6 @@
             </div>
         </section>
 
-        <!-- Other sections unchanged for brevity -->
         <section id="beauty-strength">
             <div class="section-header">
                 <h2>You Are Beautiful Inside & Out</h2>
@@ -401,7 +415,7 @@
     
     <footer>
         <p>Made with lots of care by a friend who wants to see you smiling again.<br>
-        You're incredible. Brighter days are here. Keep shining, Odufua, Bringer Of Blessings! ✨💕</p>
+        You're incredible. Brighter days are here. Keep shining, Odufua – Bringer Of Blessings! ✨💕</p>
     </footer>
 </body>
 </html>
