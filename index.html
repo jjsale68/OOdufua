@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Odufua – Welcome to 2026, Super Woman!</title>
-    <meta name="description" content="A fresh start for 2026 full of positivity, goals, motivation, and reminders of your incredible worth.">
+    <title>For Odufua – Positivity & Goals for 2026</title>
+    <meta name="description" content="A motivational space for Odufua with positivity, goals, reminders of your worth, and media gallery.">
     
-    <!-- New Fonts: Montserrat for body, Playfair Display for headings -->
+    <!-- Fonts: Inter (body), Playfair Display (headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --gold: #ffd700;
-            --blue: #4169e1;
-            --purple: #9370db;
-            --light-bg: #f0f8ff;
-            --soft-white: #ffffff;
-            --text: #2f4f4f;
-            --accent: #87ceeb;
+            --primary-blue: #1e40af;
+            --secondary-blue: #3b82f6;
+            --gray: #f3f4f6;
+            --text: #1f2937;
+            --gold: #fbbf24; /* Subtle festive accent */
+            --white: #ffffff;
         }
         
         * {
@@ -29,420 +28,253 @@
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, var(--light-bg) 0%, #fffaf0 100%);
+            font-family: 'Inter', sans-serif;
+            background-color: var(--gray);
             color: var(--text);
             line-height: 1.7;
             min-height: 100vh;
-            overflow-x: hidden;
         }
         
-        /* Festive Glow & Animations */
-        @keyframes glow {
-            0% { text-shadow: 0 0 5px var(--gold), 0 0 10px var(--gold); }
-            50% { text-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold), 0 0 30px var(--gold); }
-            100% { text-shadow: 0 0 5px var(--gold), 0 0 10px var(--gold); }
+        nav {
+            background: var(--white);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        @keyframes confetti {
-            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
         }
         
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: var(--gold);
-            animation: confetti 5s linear infinite;
-            z-index: -1;
+        nav a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 500;
+            transition: color 0.3s;
         }
         
-        .confetti:nth-child(even) { background: var(--blue); animation-duration: 6s; }
-        .confetti:nth-child(odd) { background: var(--purple); animation-duration: 4s; }
+        nav a:hover {
+            color: var(--secondary-blue);
+        }
         
         header {
-            background: linear-gradient(120deg, var(--blue), var(--purple));
-            color: white;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--white);
             text-align: center;
-            padding: 120px 20px 100px;
-            position: relative;
-            overflow: hidden;
-            border-bottom-left-radius: 50% 20%;
-            border-bottom-right-radius: 50% 20%;
-            box-shadow: 0 10px 30px rgba(65, 105, 225, 0.3);
+            padding: 80px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 10vw, 5rem);
-            margin-bottom: 20px;
-            animation: glow 2s ease-in-out infinite;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 15px;
         }
         
         header p {
-            font-size: clamp(1.2rem, 5vw, 1.6rem);
+            font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
-            font-weight: 500;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
-            position: relative;
-            z-index: 1;
         }
         
         section {
-            background: var(--soft-white);
-            margin-bottom: 60px;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 12px 40px rgba(147, 112, 219, 0.15);
-            border: 1px solid var(--accent);
+            background: var(--white);
+            margin-bottom: 50px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
-        .section-header {
-            background: linear-gradient(to right, var(--gold), var(--accent));
-            padding: 40px 30px;
-            text-align: center;
-            color: var(--text);
-        }
-        
-        .section-header h2 {
+        h2 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.4rem, 7vw, 3.2rem);
-            animation: glow 2s ease-in-out infinite;
-        }
-        
-        .section-content {
-            padding: 50px 30px;
+            font-size: clamp(2rem, 6vw, 2.5rem);
+            color: var(--primary-blue);
+            margin-bottom: 20px;
         }
         
         p {
-            font-size: 1.15rem;
-            margin-bottom: 24px;
-            max-width: 800px;
-            color: var(--text);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
         }
         
         .highlight {
-            background: linear-gradient(to right, var(--light-pink), #f8f8ff);
-            padding: 35px 30px;
-            border-radius: 20px;
-            border: 3px dashed var(--gold);
-            font-size: 1.25rem;
-            margin: 40px 0;
+            background: linear-gradient(to right, var(--gray), var(--white));
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid var(--gold);
+            font-size: 1.2rem;
             text-align: center;
-            font-weight: 500;
             color: var(--text);
-            animation: glow 3s ease-in-out infinite;
         }
         
-        .videos, .pictures {
+        .media-gallery {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 35px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
         }
         
-        .video-wrapper, .picture-wrapper {
-            background: white;
-            border-radius: 20px;
+        .media-item {
+            background: var(--gray);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
-            border: 4px solid var(--accent);
-            transition: transform 0.3s ease;
-            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
         
-        .video-wrapper:hover, .picture-wrapper:hover {
-            transform: translateY(-8px);
+        .media-item:hover {
+            transform: scale(1.05);
         }
         
-        video {
+        video, img {
             width: 100%;
             height: auto;
             display: block;
-            object-fit: cover;
-        }
-        
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            border-radius: 20px;
         }
         
         .media-caption {
-            padding: 22px;
+            padding: 15px;
             text-align: center;
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: var(--purple);
-            background: linear-gradient(to bottom, #fff, #f0f8ff);
+            font-weight: 500;
+            color: var(--primary-blue);
         }
         
-        .quote {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: var(--purple);
-            margin: 50px auto;
-            padding: 30px 20px;
-            max-width: 800px;
-            position: relative;
-            animation: glow 2s ease-in-out infinite;
+        .goal-list {
+            list-style: none;
+            margin-top: 20px;
         }
         
-        .quote::before, .quote::after {
-            content: '✨';
-            font-size: 2.5rem;
-            position: absolute;
-            opacity: 0.6;
-        }
-        
-        .quote::before { left: 10px; top: 10px; }
-        .quote::after { right: 10px; bottom: 10px; }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .card {
-            background: linear-gradient(135deg, #fffaf0, #f0f8ff);
-            padding: 35px 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
-            border: 2px solid var(--gold);
-        }
-        
-        .card strong {
-            color: var(--purple);
-            font-size: 1.6rem;
-            display: block;
-            margin-bottom: 12px;
-            font-family: 'Playfair Display', serif;
+        .goal-list li {
+            background: var(--gray);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-weight: 500;
         }
         
         footer {
-            background: linear-gradient(120deg, var(--blue), var(--purple));
-            color: white;
+            background: var(--primary-blue);
+            color: var(--white);
             text-align: center;
-            padding: 70px 20px;
-            font-size: 1.3rem;
-            line-height: 1.8;
-            border-top-left-radius: 50% 20%;
-            border-top-right-radius: 50% 20%;
-            box-shadow: 0 -10px 30px rgba(65, 105, 225, 0.3);
+            padding: 40px 20px;
+            font-size: 1rem;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         
-        footer p {
-            max-width: 800px;
-            margin: 0 auto;
+        /* Festive subtle glow */
+        @keyframes subtle-glow {
+            0% { box-shadow: 0 0 5px var(--gold); }
+            50% { box-shadow: 0 0 15px var(--gold); }
+            100% { box-shadow: 0 0 5px var(--gold); }
         }
         
-        /* Responsive */
-        @media (min-width: 480px) {
-            .videos, .pictures {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .videos, .pictures {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            header {
-                padding: 100px 15px 80px;
-            }
-            .section-content {
-                padding: 40px 20px;
-            }
+        section {
+            animation: subtle-glow 3s infinite ease-in-out;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#positivity-goals">Positivity & Goals</a></li>
+            <li><a href="#media-gallery">Videos & Pictures</a></li>
+            <li><a href="2025/old.html">2025 Memories</a></li>
+            <li><a href="#encouragement">Encouragement</a></li>
+        </ul>
+    </nav>
+    
     <header>
-        <h1>Welcome to 2026, Odufua!</h2>
-        <p>A new year full of positivity, goals, and endless motivation. You're worthy, beautiful, and an amazing person, let's make this year incredible! 🎉</p>
+        <h1>Hello Odufua – Happy 2026!</h1>
+        <p>A space just for you, filled with motivation, reminders of your worth, and all the positivity you deserve. You're beautiful, good-hearted, and ready for great things.</p>
     </header>
     
     <div class="container">
         <section id="positivity-goals">
-            <div class="section-header">
-                <h2>Positivity & Goals for 2026</h2>
-            </div>
-            <div class="section-content">
-                <p>Odufua, 2026 is your year to shine even brighter. Let's focus on positivity, every day is a chance to choose joy, embrace growth, and celebrate small wins.</p>
-                
-                <p>You're so worthy of all the good things coming your way. Your heart is pure gold, your spirit is unbreakable, and your beauty (inside and out) is truly one of a kind. As your friend, I'm here to motivate you: set those goals high, whether it's crushing it at work, trying new things, or just taking time for yourself. You've got the strength to achieve anything.</p>
-                
-                <p>Remember, you're a good person through and through, kind, talented, and inspiring. Let's make 2026 about chasing dreams, building confidence, and creating more happy memories together.</p>
-                
-                <div class="quote">You are worthy of every dream you chase.</div>
-                
-                <div class="highlight">
-                    Here's to positivity, big goals, and you being the super woman you are!</div>
-            </div>
+            <h2>Positivity & Goals for 2026</h2>
+            <p>Odufua, let's start this year with positivity. Every day is a new chance to choose joy, focus on what makes you happy, and let go of what doesn't. You're worthy of all the good in the world – your kindness, strength, and beautiful soul make you one of a kind.</p>
+            
+            <p>As your friend, I'm here to motivate you: Set those goals, big or small. Whether it's advancing at work, trying new hobbies, or just taking time for self-care, you've got what it takes. Remember, you're a good person who deserves success and happiness.</p>
+            
+            <ul class="goal-list">
+                <li>Crush your career goals – your talent shines!</li>
+                <li>Embrace daily positivity – one step at a time.</li>
+                <li>More adventures and laughs together.</li>
+                <li>Self-care days to recharge your beautiful spirit.</li>
+                <li>Celebrate every win, no matter how small.</li>
+            </ul>
+            
+            <div class="highlight">You are worthy, beautiful, and capable – 2026 is your year!</div>
         </section>
         
-        <section id="new-media">
-            <div class="section-header">
-                <h2>New Videos & Pictures 📸</h2>
-            </div>
-            <div class="section-content">
-                <p>A special spot for all the new moments we're capturing. Add your favorites here, starting with bowling fun!</p>
-                
-                <div class="videos">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/ffeef8/ff6b9d?text=Tap+to+Play+❤️">
-                            <source src="bowling1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-caption">Our bowling laughs, your smile stole the show!</div>
-                    </div>
-                    
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/fdf4ff/c44cfd?text=Tap+to+Play+😊">
-                            <source src="bowling2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-caption">That winning energy (even if I won the game 😉)</div>
-                    </div>
-                    
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="https://via.placeholder.com/800x450/fff0f8/ff9ecb?text=Tap+to+Play+✨">
-                            <source src="bowling3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-caption">Your beautiful glow during the fun</div>
-                    </div>
-                    
-                    <!-- Add more bowling videos or pictures here -->
+        <section id="media-gallery">
+            <h2>Videos & Pictures Gallery</h2>
+            <p>A place for all the moments that make you smile. Here's the latest from our times together – your energy and smile are always the highlight!</p>
+            
+            <div class="media-gallery">
+                <div class="media-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">Your smile that makes everyone happy</div>
                 </div>
                 
-                <div class="pictures">
-                    <div class="picture-wrapper">
-                        <img src="pic1.jpg" alt="Bowling picture 1">
-                        <div class="media-caption">Our bowling squad shot – smiles all around!</div>
-                    </div>
-                    
-                    <!-- Add more pictures as needed -->
+                <div class="media-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/c44cfd/ffffff?text=Tap+to+Play">
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">That warmth you share so naturally</div>
                 </div>
                 
-                <p class="highlight" style="margin-top:50px;">
-                    Odufua, your smile today was everything – so contagious and full of life. Even though I won bowling, being with you was the real win! Let's make more memories like this in 2026.</p>
-            </div>
-        </section>
-
-        <section id="old-memories">
-            <div class="section-header">
-                <h2>2025 Memories</h2>
-            </div>
-            <div class="section-content">
-                <p>Relive the great times from 2025 – click below to see the original page!</p>
+                <div class="media-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff9ecb/ffffff?text=Tap+to+Play">
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">Just you being your joyful self</div>
+                </div>
                 
-                <div class="highlight">
-                    <a href="2025/old.html" style="color: var(--purple); text-decoration: none; font-weight: bold;">View 2025 Memories ✨</a>
+                <div class="media-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
+                        <source src="video4.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">Your beautiful energy shining bright</div>
+                </div>
+                
+                <div class="media-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/c44cfd/ffffff?text=Tap+to+Play">
+                        <source src="video5.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">Moments that always make us smile 😊</div>
                 </div>
             </div>
+            
+            <div class="highlight" style="margin-top: 40px;">Add more memories anytime – your smile is always the star!</div>
         </section>
-
-        <!-- Rest of the sections from previous, updated for new theme -->
-        <section id="beauty-strength">
-            <div class="section-header">
-                <h2>You Are Beautiful Inside & Out</h2>
-            </div>
-            <div class="section-content">
-                <p>Your beauty isn't just how you look (though you always look amazing!), it's in your kindness, your laugh, the way you light up when you're happy.</p>
-                
-                <p>You're strong, capable, and growing every day. Your bosses see it, your friends see it, and soon you'll feel it even more.</p>
-                
-                <div class="quote">Keep shining, beautiful soul. The world is better because you're in it.</div>
-            </div>
-        </section>
-
-        <section id="letting-go">
-            <div class="section-header">
-                <h2>Healing with Grace</h2>
-            </div>
-            <div class="section-content">
-                <p>It's okay to take time to heal. Letting go isn't easy, but you're doing it with so much strength and grace. Be proud of yourself for choosing peace.</p>
-                
-                <p>Better days full of laughter, love, and new adventures are coming. You've got so much to look forward to.</p>
-                
-                <div class="highlight">You're not losing: you're making space for something even more beautiful.</div>
-            </div>
-        </section>
-
-        <section id="time-spark">
-            <div class="section-header">
-                <h2>Your Spark Is Coming Back</h2>
-            </div>
-            <div class="section-content">
-                <p>That joyful spark inside you? It's still there, and it's going to shine brighter than ever. Keep doing things that make you happy: music, friends, goals, little treats.</p>
-                
-                <p>Your career is blooming because you're talented and hardworking. Keep going: great things are ahead!</p>
-                
-                <div class="quote">Happiness looks gorgeous on you.</div>
-            </div>
-        </section>
-
+        
         <section id="encouragement">
-            <div class="section-header">
-                <h2>Happy Reminders Just for You</h2>
-            </div>
-            <div class="section-content">
-                <div class="grid">
-                    <div class="card">
-                        <strong>You Are Loved</strong>
-                        So deeply by friends who adore you.
-                    </div>
-                    <div class="card">
-                        <strong>You Are Strong</strong>
-                        And getting stronger every day.
-                    </div>
-                    <div class="card">
-                        <strong>You Are Kind</strong>
-                        Your heart is pure gold.
-                    </div>
-                    <div class="card">
-                        <strong>You Are Talented</strong>
-                        Everyone at work knows it!
-                    </div>
-                    <div class="card">
-                        <strong>You Are Beautiful</strong>
-                        Inside and out, always.
-                    </div>
-                    <div class="card">
-                        <strong>You Deserve Joy</strong>
-                        And it's coming your way.
-                    </div>
-                </div>
-                
-                <div class="highlight">
-                    Odufua, smile because you're amazing, you're enough, and wonderful things are waiting for you. Keep being your beautiful self!</div>
-            </div>
+            <h2>Daily Motivation & Reminders</h2>
+            <p>Odufua, you're beautiful inside and out – your kindness touches everyone. You're a good person with a heart of gold, worthy of every success and joy.</p>
+            
+            <p>I'm here to remind you: Keep pushing toward your goals, celebrate your strength, and know you're never alone. You've got this!</p>
+            
+            <div class="quote">You are enough, you are worthy, you are loved.</div>
+            
+            <div class="highlight">Embrace 2026 – with positivity, goals, and all the motivation you need. You're amazing!</div>
         </section>
     </div>
     
     <footer>
-        <p>Updated with today's bowling fun! Made with lots of care by a friend who loves seeing you smile.<br>
-        You're incredible. Brighter days are here. Keep shining, Odufua – Bringer Of Blessings! ✨💕</p>
+        <p>Made with care for Odufua. Access 2025 memories <a href="2025/old.html" style="color: white; text-decoration: underline;">here</a>. Keep glowing! ✨💕</p>
     </footer>
 </body>
 </html>
