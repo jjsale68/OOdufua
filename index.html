@@ -13,15 +13,14 @@
     
     <style>
         :root {
-            --primary: #0d9488;       /* Soft teal - calm & modern */
-            --secondary: #14b8a6;     /* Lighter teal - fresh */
-            --accent: #f472b6;        /* Warm coral - gentle energy */
-            --bg: #f9fafb;            /* Clean light gray */
+            --pink: #ff6b9d;          /* Matches your 2025 page */
+            --soft-pink: #fda4af;     /* Lighter pink for accents */
+            --bg: #fff5f8;            /* Very light pink-gray */
             --card: #ffffff;
-            --text: #1f2937;          /* Dark slate - perfect contrast */
-            --text-light: #4b5563;
-            --border: #e5e7eb;
-            --glow: rgba(13, 148, 136, 0.2); /* Subtle teal glow */
+            --text: #4a2c5e;          /* Dark purple-gray for readability */
+            --text-light: #6b7280;
+            --border: #fecdd3;
+            --accent: #fbbf24;        /* Subtle gold for festive touch */
         }
         
         * {
@@ -41,7 +40,7 @@
         nav {
             background: var(--card);
             padding: 1.2rem 2rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 12px rgba(255, 107, 157, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -57,24 +56,24 @@
         
         nav a {
             text-decoration: none;
-            color: var(--primary);
+            color: var(--pink);
             font-weight: 500;
             font-size: 1rem;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--accent);
+            color: var(--soft-pink);
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--pink), var(--soft-pink));
             color: white;
             text-align: center;
             padding: 6rem 1.5rem 5rem;
             border-bottom-left-radius: 2.5rem;
             border-bottom-right-radius: 2.5rem;
-            box-shadow: 0 10px 30px rgba(13, 148, 136, 0.25);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.25);
         }
         
         header h1 {
@@ -102,23 +101,23 @@
             margin-bottom: 3rem;
             padding: 2.5rem;
             border-radius: 1.5rem;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.1);
             border: 1px solid var(--border);
         }
         
         h2 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2rem, 5vw, 2.8rem);
-            color: var(--primary);
+            color: var(--pink);
             margin-bottom: 1.5rem;
             text-align: center;
             animation: subtle-glow 3s ease-in-out infinite;
         }
         
         @keyframes subtle-glow {
-            0% { text-shadow: 0 0 4px rgba(13, 148, 136, 0.2); }
-            50% { text-shadow: 0 0 12px rgba(13, 148, 136, 0.4); }
-            100% { text-shadow: 0 0 4px rgba(13, 148, 136, 0.2); }
+            0% { text-shadow: 0 0 4px rgba(255, 107, 157, 0.3); }
+            50% { text-shadow: 0 0 12px rgba(255, 107, 157, 0.5); }
+            100% { text-shadow: 0 0 4px rgba(255, 107, 157, 0.3); }
         }
         
         p {
@@ -129,7 +128,7 @@
         }
         
         .highlight {
-            background: rgba(13, 148, 136, 0.05);
+            background: rgba(255, 107, 157, 0.05);
             padding: 2rem;
             border-radius: 1rem;
             font-size: 1.25rem;
@@ -149,13 +148,13 @@
         .gallery-item {
             border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .gallery-item:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(13, 148, 136, 0.2);
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.25);
         }
         
         video, img {
@@ -166,7 +165,7 @@
         }
         
         footer {
-            background: var(--primary);
+            background: var(--pink);
             color: white;
             text-align: center;
             padding: 3rem 1rem;
@@ -236,47 +235,47 @@
             <div class="gallery">
                 <!-- 9 Videos -->
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/0d9488/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
                         <source src="video1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/14b8a6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fda4af/ffffff?text=Tap+to+Play">
                         <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
                         <source src="video3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/0d9488/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fda4af/ffffff?text=Tap+to+Play">
                         <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/14b8a6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
                         <source src="video5.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fda4af/ffffff?text=Tap+to+Play">
                         <source src="video6.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/0d9488/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
                         <source src="video7.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/14b8a6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fda4af/ffffff?text=Tap+to+Play">
                         <source src="video8.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ff6b9d/ffffff?text=Tap+to+Play">
                         <source src="video9.mp4" type="video/mp4">
                     </video>
                 </div>
