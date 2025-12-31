@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Odufua – Positivity & Goals for 2026</title>
-    <meta name="description" content="A motivational space for Odufua with positivity, goals, reminders of your worth, and media gallery.">
+    <title>For Odufua – 2026 Glow</title>
+    <meta name="description" content="A beautiful space for Odufua full of motivation, positivity, reminders of your worth, and your happiest moments.">
     
-    <!-- Fonts: Inter (body), Playfair Display (headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-blue: #1e40af;
-            --secondary-blue: #3b82f6;
-            --gray: #f3f4f6;
-            --text: #1f2937;
-            --gold: #fbbf24; /* Subtle festive accent */
-            --white: #ffffff;
+            --primary: #2c5282;       /* Deep blue - calm, confident */
+            --secondary: #4299e1;     /* Bright blue - uplifting */
+            --accent: #ecc94b;        /* Soft gold - gentle festive touch */
+            --bg: #f7fafc;            /* Very light gray-blue */
+            --card: #ffffff;
+            --text: #2d3748;
+            --text-light: #4a5568;
+            --border: #e2e8f0;
         }
         
         * {
@@ -29,16 +30,16 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--gray);
+            background-color: var(--bg);
             color: var(--text);
-            line-height: 1.7;
+            line-height: 1.8;
             min-height: 100vh;
         }
         
         nav {
-            background: var(--white);
-            padding: 15px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--card);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -48,103 +49,104 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 2rem;
             flex-wrap: wrap;
         }
         
         nav a {
             text-decoration: none;
-            color: var(--primary-blue);
+            color: var(--primary);
             font-weight: 500;
             font-size: 1rem;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--secondary-blue);
+            color: var(--secondary);
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-            color: var(--white);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
             text-align: center;
-            padding: 60px 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 6rem 1.5rem 5rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            box-shadow: 0 10px 30px rgba(44, 82, 130, 0.25);
         }
         
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 15px;
-            animation: subtle-glow 2s ease-in-out infinite;
-        }
-        
-        @keyframes subtle-glow {
-            0% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
-            50% { text-shadow: 0 0 15px rgba(255,255,255,0.8); }
-            100% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+            font-size: clamp(2.8rem, 8vw, 4.5rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
         
         header p {
-            font-size: clamp(1rem, 4vw, 1.2rem);
+            font-size: clamp(1.1rem, 4vw, 1.4rem);
             max-width: 800px;
             margin: 0 auto;
+            opacity: 0.95;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 30px 15px;
+            padding: 3rem 1rem;
         }
         
         section {
-            background: var(--white);
-            margin-bottom: 40px;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background: var(--card);
+            margin-bottom: 3rem;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
         }
         
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(1.8rem, 5vw, 2.2rem);
-            color: var(--primary-blue);
-            margin-bottom: 15px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
         
         p {
-            font-size: clamp(1rem, 3vw, 1.1rem);
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            color: var(--text-light);
         }
         
         .highlight {
-            background: var(--gray);
-            padding: 25px;
-            border-radius: 12px;
-            font-size: clamp(1.1rem, 3.5vw, 1.2rem);
+            background: rgba(44, 82, 130, 0.05);
+            padding: 2rem;
+            border-radius: 1rem;
+            font-size: 1.25rem;
             text-align: center;
             color: var(--text);
-            border-left: 5px solid var(--gold);
+            border-left: 6px solid var(--accent);
+            margin: 2rem 0;
         }
         
-        .media-gallery {
+        .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
         
-        .media-item {
-            border-radius: 12px;
+        .gallery-item {
+            border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .media-item:hover {
-            transform: scale(1.03);
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(44, 82, 130, 0.2);
         }
         
         video, img {
@@ -155,34 +157,38 @@
         }
         
         footer {
-            background: var(--primary-blue);
-            color: var(--white);
+            background: var(--primary);
+            color: white;
             text-align: center;
-            padding: 30px 15px;
-            font-size: clamp(0.9rem, 3vw, 1rem);
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            padding: 3rem 1rem;
+            font-size: 1.1rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
         }
         
-        /* Mobile Adjustments */
+        /* Mobile-first responsive */
         @media (max-width: 768px) {
             nav ul {
-                gap: 10px;
-            }
-            nav a {
-                font-size: 0.9rem;
+                gap: 1rem;
+                font-size: 0.95rem;
             }
             header {
-                padding: 50px 15px;
+                padding: 5rem 1rem 4rem;
             }
             section {
-                padding: 25px 15px;
+                padding: 2rem 1rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
             }
             .container {
-                padding: 20px 10px;
+                padding: 1.5rem 1rem;
             }
-            .media-gallery {
-                grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 769px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
@@ -190,161 +196,127 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#positivity-goals">Positivity & Goals</a></li>
-            <li><a href="#media-gallery">Gallery</a></li>
+            <li><a href="#positivity">Positivity & Goals</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="2025/old.html">2025 Memories</a></li>
-            <li><a href="#encouragement">Encouragement</a></li>
+            <li><a href="#motivation">Motivation</a></li>
         </ul>
     </nav>
     
     <header>
-        <h1>Hello Odufua, Happy 2026!</h1>
-        <p>A new year, new joys. You're beautiful, kind, and worthy of every smile. Let's make it sparkle!</p>
+        <h1>Welcome 2026, Odufua</h1>
+        <p>A new year full of light, growth, and beautiful moments. You are worthy, beautiful, and one of a kind.</p>
     </header>
     
     <div class="container">
-        <section id="positivity-goals">
+        <section id="positivity">
             <h2>Positivity & Goals for 2026</h2>
-            <p>Odufua, imagine 2026 as a year of pure joy. Every morning, remember your worth: a beautiful soul with a heart full of goodness.</p>
+            <p>Odufua, this year is yours. Every day you choose to smile, to grow, to chase what makes your heart happy. Your kindness, your strength, your beautiful soul – these are the things that make you truly special.</p>
             
-            <p>You're strong, talented, and always spreading light. Set goals that make you excited, like new adventures or work wins. I'll be here cheering!</p>
+            <p>You are a good person. You deserve every joy, every success, every peaceful moment. Set goals that excite you. Take small steps. Celebrate every win. I'm here cheering for you every single day.</p>
             
-            <div class="highlight">You bring smiles everywhere. Keep glowing, super woman!</div>
+            <div class="highlight">
+                You light up the world just by being you. Keep shining.
+            </div>
         </section>
         
-        <section id="media-gallery">
-            <h2>Your Joyful Gallery</h2>
-            <p>These moments capture your beautiful smile and energy. Each one reminds me how fun time with you is!</p>
+        <section id="gallery">
+            <h2>Your Beautiful Gallery</h2>
+            <p>These moments capture your smile, your joy, your glow. Tap any to play or view.</p>
             
-            <div class="media-gallery">
-                <div class="media-item">
+            <div class="gallery">
+                <!-- 9 Videos -->
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
                         <source src="video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fbbf24/ffffff?text=Tap+to+Play">
                         <source src="video3.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
                         <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video5.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                <div class="gallery-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fbbf24/ffffff?text=Tap+to+Play">
                         <source src="video6.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                <div class="gallery-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
                         <source src="video7.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
+                <div class="gallery-item">
                     <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video8.mp4" type="video/mp4">
                     </video>
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                <div class="gallery-item">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/fbbf24/ffffff?text=Tap+to+Play">
                         <source src="video9.mp4" type="video/mp4">
                     </video>
                 </div>
                 
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m1.jpg" type="video/mp4">
-                    </video>
+                <!-- 9 Pictures -->
+                <div class="gallery-item">
+                    <img src="pic1.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m2.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic2.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m3.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic3.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m4.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic4.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m5.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic5.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m6.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic6.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m7.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic7.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m8.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic8.jpg" alt="Beautiful moment">
                 </div>
-                
-                <div class="media-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
-                        <source src="m9.jpg" type="video/mp4">
-                    </video>
+                <div class="gallery-item">
+                    <img src="pic9.jpg" alt="Beautiful moment">
                 </div>
-                
-                <!-- Add pictures or more videos here -->
             </div>
-            
-            <div class="highlight">These always make me smile. Your energy is contagious!</div>
         </section>
         
-        <section id="encouragement">
+        <section id="motivation">
             <h2>Motivation Just for You</h2>
-            <p>You're worthy of every dream. Your goodness inspires everyone around you. Keep going, beautiful friend!</p>
+            <p>Odufua, you are beautiful inside and out. Your kindness touches everyone around you. Your strength carries you through every day. You are worthy of every good thing life has to offer.</p>
             
-            <p>2026 will be full of wins. You're talented, strong, and deserving of joy. I'm proud to know you.</p>
+            <p>Keep chasing your dreams. Keep smiling. Keep being the incredible person you are. I'm proud to know you and excited to see all the wonderful things 2026 will bring you.</p>
             
-            <div class="quote">You light up the world with your smile.</div>
-            
-            <div class="highlight">You're amazing. Smile and conquer 2026!</div>
+            <div class="highlight">
+                You are enough. You are loved. You are going to shine even brighter.
+            </div>
         </section>
     </div>
     
     <footer>
-        <p>A space made for you. Access 2025 memories <a href="2025/old.html" style="color: white; text-decoration: underline;">here</a>. Keep smiling! ✨💕</p>
+        <p>Made with care for Odufua. Access 2025 memories <a href="2025/old.html" style="color: white; text-decoration: underline;">here</a>. Keep smiling! ✨</p>
     </footer>
 </body>
 </html>
