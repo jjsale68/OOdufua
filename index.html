@@ -12,12 +12,12 @@
     
     <style>
         :root {
-            --primary: #4f46e5;       /* Deep indigo - cool & modern */
-            --secondary: #06b6d4;     /* Soft cyan-blue - fresh & uplifting */
-            --accent: #f472b6;        /* Light coral - subtle warmth */
-            --bg: #f8fafc;            /* Very light cool gray */
+            --primary: #1e3a8a;       /* Deep cool blue */
+            --secondary: #3b82f6;     /* Soft cyan blue */
+            --accent: #06b6d4;        /* Teal glow */
+            --bg: #f8fafc;            /* Light cool gray */
             --card: #ffffff;
-            --text: #1e293b;
+            --text: #1f2937;
             --text-light: #4b5563;
             --border: #e2e8f0;
         }
@@ -39,7 +39,7 @@
         nav {
             background: var(--card);
             padding: 1.2rem 2rem;
-            box-shadow: 0 2px 12px rgba(79, 70, 229, 0.08);
+            box-shadow: 0 2px 12px rgba(30, 58, 138, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -71,7 +71,7 @@
             padding: 6rem 1.5rem 5rem;
             border-bottom-left-radius: 2.5rem;
             border-bottom-right-radius: 2.5rem;
-            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.25);
         }
         
         header h1 {
@@ -109,13 +109,6 @@
             color: var(--primary);
             margin-bottom: 1.5rem;
             text-align: center;
-            animation: subtle-glow 3s ease-in-out infinite;
-        }
-        
-        @keyframes subtle-glow {
-            0% { text-shadow: 0 0 4px rgba(79, 70, 229, 0.3); }
-            50% { text-shadow: 0 0 12px rgba(79, 70, 229, 0.5); }
-            100% { text-shadow: 0 0 4px rgba(79, 70, 229, 0.3); }
         }
         
         p {
@@ -126,7 +119,7 @@
         }
         
         .highlight {
-            background: rgba(79, 70, 229, 0.05);
+            background: rgba(30, 58, 138, 0.05);
             padding: 2rem;
             border-radius: 1rem;
             font-size: 1.25rem;
@@ -146,13 +139,13 @@
         .gallery-item {
             border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.15);
+            box-shadow: 0 6px 20px rgba(30, 58, 138, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .gallery-item:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+            box-shadow: 0 15px 35px rgba(30, 58, 138, 0.25);
         }
         
         video, img {
@@ -231,54 +224,54 @@
             <p>These moments capture your smile, your joy, your glow. Tap any to play or view.</p>
             
             <div class="gallery">
-                <!-- Your 9 videos -->
+                <!-- 9 Videos -->
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/4f46e5/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
                         <source src="video1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
                         <source src="video3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/4f46e5/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
                         <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video5.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
                         <source src="video6.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/4f46e5/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
                         <source src="video7.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
                         <source src="video8.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/f472b6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
                         <source src="video9.mp4" type="video/mp4">
                     </video>
                 </div>
                 
-                <!-- Your 9 pictures -->
+                <!-- 9 Pictures -->
                 <div class="gallery-item">
                     <img src="pic1.jpg" alt="Beautiful moment">
                 </div>
