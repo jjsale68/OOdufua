@@ -12,11 +12,11 @@
     
     <style>
         :root {
-            --primary: #1e40af;       /* Cool deep navy */
-            --secondary: #60a5fa;     /* Soft sky blue */
+            --primary: #475569;       /* Cool slate blue */
+            --secondary: #14b8a6;     /* Soft teal accent */
             --bg: #f9fafb;            /* Light cool gray */
             --card: #ffffff;
-            --text: #1f2937;
+            --text: #111827;
             --text-light: #4b5563;
             --border: #e2e8f0;
         }
@@ -37,8 +37,8 @@
         
         nav {
             background: var(--card);
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(30, 64, 175, 0.08);
+            padding: 1.2rem 2rem;
+            box-shadow: 0 2px 12px rgba(71, 85, 105, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -48,7 +48,7 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 2rem;
             flex-wrap: wrap;
         }
         
@@ -64,44 +64,47 @@
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), #64748b);
             color: white;
             text-align: center;
-            padding: 5rem 1rem 4rem;
+            padding: 5rem 1.5rem 4rem;
             border-bottom-left-radius: 2rem;
             border-bottom-right-radius: 2rem;
+            box-shadow: 0 10px 30px rgba(71, 85, 105, 0.25);
         }
         
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 8vw, 4.2rem);
+            font-size: clamp(2.5rem, 7vw, 4rem);
             margin-bottom: 1rem;
+            font-weight: 700;
         }
         
         header p {
             font-size: clamp(1rem, 4vw, 1.25rem);
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
+            opacity: 0.95;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
         }
         
         section {
             background: var(--card);
             margin-bottom: 2.5rem;
             padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 1.25rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
         }
         
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(1.8rem, 5vw, 2.4rem);
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
             color: var(--primary);
             margin-bottom: 1.2rem;
             text-align: center;
@@ -114,12 +117,11 @@
         }
         
         .highlight {
-            background: rgba(30, 64, 175, 0.05);
-            padding: 1.5rem;
-            border-radius: 0.8rem;
-            font-size: 1.15rem;
+            background: rgba(71, 85, 105, 0.04);
+            padding: 1.8rem;
+            border-radius: 1rem;
+            font-size: 1.2rem;
             text-align: center;
-            color: var(--text);
             border-left: 5px solid var(--secondary);
             margin: 1.5rem 0;
         }
@@ -132,10 +134,10 @@
         }
         
         .gallery-item {
-            border-radius: 0.8rem;
+            border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
         }
         
         .gallery-item:hover {
@@ -153,31 +155,28 @@
             color: white;
             text-align: center;
             padding: 2.5rem 1rem;
-            font-size: 1rem;
+            font-size: 1.1rem;
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
         }
         
-        /* Mobile-first */
+        footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        
+        /* Mobile-first responsive */
         @media (max-width: 768px) {
-            nav ul {
-                gap: 1rem;
-            }
-            header {
-                padding: 4rem 1rem 3rem;
-            }
-            section {
-                padding: 1.5rem 1rem;
-            }
-            .gallery {
-                grid-template-columns: 1fr;
-            }
+            nav ul { gap: 1rem; font-size: 0.95rem; }
+            header { padding: 4rem 1rem 3rem; }
+            section { padding: 1.5rem 1rem; }
+            .gallery { grid-template-columns: 1fr; }
+            .container { padding: 1.5rem 1rem; }
         }
         
         @media (min-width: 769px) {
-            .gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            .gallery { grid-template-columns: repeat(3, 1fr); }
         }
     </style>
 </head>
@@ -215,47 +214,47 @@
             <div class="gallery">
                 <!-- 9 Videos -->
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video5.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video6.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e40af/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video7.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video8.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
+                    <video controls preload="metadata">
                         <source src="video9.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -304,7 +303,7 @@
     </div>
     
     <footer>
-        <p>Made with care for Odufua. Access 2025 memories <a href="2025/old.html" style="color: white; text-decoration: underline;">here</a>. Keep smiling! ✨</p>
+        <p>Made with care for Odufua. Access 2025 memories <a href="2025/old.html" style="color: white; font-weight: 500; text-decoration: underline;">here</a>. Keep smiling! ✨</p>
     </footer>
 </body>
 </html>
