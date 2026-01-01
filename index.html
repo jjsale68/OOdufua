@@ -1,286 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Odufua – 2026 Glow</title>
-    <meta name="description" content="A beautiful space for Odufua full of motivation, positivity, reminders of your worth, and your happiest moments.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #1e293b;       /* Deep slate blue - cool & elegant */
-            --secondary: #06b6d4;     /* Soft cyan - fresh accent */
-            --bg: #f9fafb;            /* Light cool gray - excellent readability */
-            --card: #ffffff;
-            --text: #111827;
-            --text-light: #4b5563;
-            --border: #e2e8f0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.8;
-            min-height: 100vh;
-        }
-        
-        nav {
-            background: var(--card);
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(30, 41, 59, 0.06);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 1.8rem;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: var(--primary);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--secondary);
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), #334155);
-            color: white;
-            text-align: center;
-            padding: 5rem 1.5rem 4rem;
-            border-bottom-left-radius: 2rem;
-            border-bottom-right-radius: 2rem;
-            box-shadow: 0 8px 25px rgba(30, 41, 59, 0.2);
-        }
-        
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 7vw, 4rem);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        header p {
-            font-size: clamp(1rem, 4vw, 1.25rem);
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0.95;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2.5rem 1rem;
-        }
-        
-        section {
-            background: var(--card);
-            margin-bottom: 2.5rem;
-            padding: 2rem;
-            border-radius: 1.25rem;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-            border: 1px solid var(--border);
-        }
-        
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            color: var(--primary);
-            margin-bottom: 1.2rem;
-            text-align: center;
-        }
-        
-        p {
-            font-size: 1.05rem;
-            margin-bottom: 1.2rem;
-            color: var(--text-light);
-        }
-        
-        .highlight {
-            background: rgba(30, 41, 59, 0.04);
-            padding: 1.8rem;
-            border-radius: 1rem;
-            font-size: 1.2rem;
-            text-align: center;
-            border-left: 5px solid var(--secondary);
-            margin: 1.5rem 0;
-        }
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.2rem;
-            margin-top: 1.5rem;
-        }
-        
-        .gallery-item {
-            border-radius: 1rem;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-        
-        .gallery-item:hover {
-            transform: translateY(-6px);
-        }
-        
-        video, img {
-            width: 100%;
-            height: auto;
-            display: block;
-            background: #000; /* fallback */
-        }
-        
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-            font-size: 1.1rem;
-            border-top-left-radius: 2rem;
-            border-top-right-radius: 2rem;
-        }
-        
-        footer a {
-            color: white;
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        
-        /* Mobile-first responsive */
-        @media (max-width: 768px) {
-            nav ul { gap: 1rem; font-size: 0.95rem; }
-            header { padding: 4rem 1rem 3rem; }
-            section { padding: 1.5rem 1rem; }
-            .gallery { grid-template-columns: 1fr; }
-            .container { padding: 1.5rem 1rem; }
-        }
-        
-        @media (min-width: 769px) {
-            .gallery { grid-template-columns: repeat(3, 1fr); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odufua – 2026 Journal</title>
+  <meta name="description" content="Your space for light, growth, goals and beautiful moments in 2026."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #fffaf5;                /* warm cream */
+      --card: #ffffff;
+      --peach: #ffe4d9;             /* soft peach */
+      --gold: #d4a373;              /* muted gold accent */
+      --text: #2d1b3a;              /* deep charcoal */
+      --text-light: #5c4a6e;
+      --border: #f5e1d9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to bottom, var(--peach), var(--bg));
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 9vw, 5rem);
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+
+    header p {
+      font-size: clamp(1.1rem, 4vw, 1.35rem);
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-light);
+    }
+
+    nav {
+      background: var(--card);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1.2rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      padding: 2.5rem;
+      background: var(--card);
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.4rem;
+      color: var(--text-light);
+    }
+
+    .highlight {
+      background: var(--peach);
+      padding: 1.8rem;
+      border-radius: 1rem;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 2rem 0;
+      color: var(--text);
+    }
+
+    .gallery {
+      column-count: 3;
+      column-gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-6px);
+    }
+
+    video, img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      font-size: 1.1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .gallery {
+        column-count: 1;
+      }
+      nav a {
+        margin: 0 0.8rem;
+        font-size: 0.95rem;
+      }
+      header {
+        padding: 4rem 1rem 3rem;
+      }
+      .container {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#positivity">Positivity & Goals</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="2025/old.html">2025 Memories</a></li>
-            <li><a href="#motivation">Motivation</a></li>
-        </ul>
-    </nav>
-    
-    <header>
-        <h1>Welcome 2026, Odufua</h1>
-        <p>A new year full of light, growth, and beautiful moments. You are worthy, beautiful, and one of a kind.</p>
-    </header>
-    
-    <div class="container">
-        <section id="positivity">
-            <h2>Positivity & Goals for 2026</h2>
-            <p>Odufua, this year is yours. Every day you choose to smile, to grow, to chase what makes your heart happy. Your kindness, your strength, your beautiful soul – these are the things that make you truly special.</p>
-            
-            <p>You are a good person. You deserve every joy, every success, every peaceful moment. Set goals that excite you. Take small steps. Celebrate every win. I'm here cheering for you every single day.</p>
-            
-            <div class="highlight">
-                You light up the world just by being you. Keep shining.
-            </div>
-        </section>
-        
-        <section id="gallery">
-            <h2>Your Beautiful Gallery</h2>
-            <p>These moments capture your smile, your joy, your glow. Tap any to play or view.</p>
-            
-            <div class="gallery">
-                <!-- Remaining 6 videos -->
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
-                        <source src="video1.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
-                        <source src="video2.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
-                        <source src="video3.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
-                        <source src="video4.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=Tap+to+Play">
-                        <source src="video6.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="gallery-item">
-                    <video controls preload="metadata" poster="https://via.placeholder.com/600x400/06b6d4/ffffff?text=Tap+to+Play">
-                        <source src="video9.mp4" type="video/mp4">
-                    </video>
-                </div>
-                
-                <!-- Remaining 6 pictures -->
-                <div class="gallery-item">
-                    <img src="pic1.jpg" alt="Beautiful moment">
-                </div>
-                <div class="gallery-item">
-                    <img src="pic2.jpg" alt="Beautiful moment">
-                </div>
-                <div class="gallery-item">
-                    <img src="pic3.jpg" alt="Beautiful moment">
-                </div>
-                <div class="gallery-item">
-                    <img src="pic4.jpg" alt="Beautiful moment">
-                </div>
-                <div class="gallery-item">
-                    <img src="pic5.jpg" alt="Beautiful moment">
-                </div>
-                <div class="gallery-item">
-                    <img src="pic6.jpg" alt="Beautiful moment">
-                </div>
-            </div>
-        </section>
-        
-        <section id="motivation">
-            <h2>Motivation Just for You</h2>
-            <p>Odufua, you are beautiful inside and out. Your kindness touches everyone around you. Your strength carries you through every day. You are worthy of every good thing life has to offer.</p>
-            
-            <p>Keep chasing your dreams. Keep smiling. Keep being the incredible person you are. I'm proud to know you and excited to see all the wonderful things 2026 will bring you.</p>
-            
-            <div class="highlight">
-                You are enough. You are loved. You are going to shine even brighter.
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>Made with care for Odufua. Access 2025 memories <a href="2025/old.html">here</a>. Keep smiling! ✨</p>
-    </footer>
-</body>
-</html>
+  <header>
+    <h1>Welcome to 2026, Odufua</h1>
+    <p>A new year full of warmth, growth, and moments that make you smile. You are beautiful, worthy, and one of a kind.</p>
+  </header>
+
+  <nav>
+    <a href="#positivity">Positivity & Goals</a>
+    <a href="#gallery">Gallery</a>
+    <a href="2025/old.html">2025 Memories</a>
+    <a href="#motivation">Motivation</a>
+  </nav>
+
+  <div class="container">
+    <section id="positivity">
+      <h2>Positivity & Goals for 2026</h2>
+      <p>Odufua, this year belongs to you. Every sunrise is a fresh invitation to smile, to grow, to chase what lights your heart up. Your kindness, your quiet strength, your beautiful spirit — these are the gifts that make you so special.</p>
+      
+      <p>You are a truly good person. You deserve joy, peace, success, and every gentle moment life offers. Write down goals that excite you. Take small steps. Celebrate every victory. I’m right here cheering you on, always.</p>
+      
+      <div class="highlight">
+        You bring light into every room you enter. Keep glowing.
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Your Beautiful Gallery</h2>
+      <p>These captured moments hold your smile, your laughter, your light. Tap to relive them.</p>
+
+      <div class="gallery">
+        <!-- Videos -->
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video6.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video controls preload="metadata" poster="https://via.placeholder.com/600x400/ffe4d9/1e293b?text=Tap+to+Play">
+            <source src="video9.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Pictures -->
+        <div class="gallery-item">
+          <img src="pic1.jpg" alt="Beautiful moment">
+        </div>
+        <div class="gallery-item">
+          <img src="pic2.jpg" alt="Beautiful moment">
+        </div>
+        <div class="gallery-item">
+          <img src="pic3.jpg" alt="Beautiful moment">
+        </div>
+        <div class="gallery-item">
+          <img src="pic4.jpg" alt="Beautiful moment">
+        </div>
+        <div class="gallery-item">
+          <img src="pic5.jpg" alt="Beautiful moment">
+        </div>
+        <div class="gallery-item">
+          <img src="pic6.jpg" alt="Beautiful moment">
+        </div>
+      </div>
+    </section>
+
+    <section id="motivation">
+      <h2>Motivation Just for You</h2>
+      <p>Odufua, you are beautiful inside and out. Your kindness touches everyone around you. Your strength carries you through every day. You are worthy of every
